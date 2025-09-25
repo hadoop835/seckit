@@ -43,8 +43,6 @@ implementation 'com.alibaba:seckit:0.0.1'
 
 > 注意:
 > 1. 本工具需要 JDK 8 以上版本
-> 2. 对于 JDK 16 及以上版本，由于JDK默认禁止了外部包通过反射访问 jdk 内部的 protected/private 成员，而安全工具的防护能力需要访问到这些成员，因此需要在虚拟机参数中添加`--add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/sun.net=ALL-UNNAMED`
-
 
 ## 使用指南
 
@@ -114,6 +112,9 @@ public class JdbcExample {
 ```
 
 ### 2. SSRF攻击防护
+
+> ⚠️ 对于 JDK 16 及以上版本，由于JDK默认禁止了外部包通过反射访问 jdk 内部的 protected/private 成员，而安全工具的防护能力需要访问到这些成员，因此需要在虚拟机参数中添加`--add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/sun.net=ALL-UNNAMED`
+
 
 #### 支持的HTTP客户端
 
