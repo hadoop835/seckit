@@ -1,4 +1,4 @@
-# 阿里云安全SDK
+# 阿里巴巴安全SDK
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.alibaba/seckit.svg)](https://search.maven.org/artifact/com.alibaba/seckit)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
